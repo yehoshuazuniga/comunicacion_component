@@ -6,7 +6,6 @@ import { ComponentHijo } from './components/hijo/hijo.component';
 import { ComponentPadre } from './components/padre/padre.component';
 import { ComponentVecino } from './components/vecino/vecino.component';
 import { DataAccion } from './services/data.service';
-import { AccionProximidad } from './services/proximidad.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,7 @@ import { AccionProximidad } from './services/proximidad.service';
   imports: [
     BrowserModule
   ],
-  providers: [DataAccion, AccionProximidad],
+  providers: [DataAccion],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

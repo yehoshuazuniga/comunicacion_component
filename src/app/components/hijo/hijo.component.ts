@@ -9,15 +9,16 @@ export class ComponentHijo {
 
     @Input()
     accionHijo ='Hijo'
+
     @Output() 
     accionPadre = new EventEmitter<string>();
 
     constructor(private accionData:DataAccion ){  }
 
-    accionPropia(){
+    accioHijo(){
         this.accionHijo='Hijo sobre si mismo'
-        this.accionPadre.emit('Hijo sabre el padre'); 
-        this.accionData.accion= 'Hijo sobre el vecino'
+        this.accionPadre.emit('Hijo sobre el padre'); 
+        //this.accionData.accion= 'Hijo sobre el vecino'
 
     }
     
