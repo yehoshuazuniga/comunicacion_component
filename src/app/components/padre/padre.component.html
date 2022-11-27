@@ -1,0 +1,17 @@
+    <h1 class="h1">Hola soy un componente padre</h1>
+   <div class="btn-group col-12">
+    <button class="btn btn-outline-danger bg-dark mt-3"
+        (click)="chAccionPadre()"
+    >
+        <span class="">Accion Padre</span>
+    </button>
+  
+   </div>
+     <h5 class="mt-4 text-center">
+        Esta es una accion del <span class="fw-bold fst-italic">{{accionPadre}}</span>
+    </h5>
+
+    
+    <component-hijo [accionHijo]="accionDelHijo"
+                    (accionPadre)="accionHijoPadre($event)"
+        ></component-hijo>
